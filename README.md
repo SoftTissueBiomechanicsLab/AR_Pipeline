@@ -17,17 +17,17 @@ We provide '.ply' files of results from fintie element simulations discretized w
 We provide example python scripts to automatically create AR models from continuum, shell, and beam finite elements. These scripts may be run from the 'Scipting' window within Blender or from the command line. To execute these scripts, users will need the '.ply' files provided for each example. The pythons scrips are as follows: 
 
 1. Static Models
-  a. Supplementary_Code_1a.py : Model with continuum elements
-  b. Supplementary_Code_1b.py : Model with shell elements
-  c. Supplementary_Code_1c.py : Model with beam elements 
+  * Supplementary_Code_1a.py : Model with continuum elements
+  * Supplementary_Code_1b.py : Model with shell elements
+  * Supplementary_Code_1c.py : Model with beam elements 
 2. Dynamic Models for Android
-  a. Supplementary_Code_2a.py : Model with continuum elements
-  b. Supplementary_Code_2b.py : Model with shell elements
-  c. Supplementary_Code_2c.py : Model with beam elements 
+  * Supplementary_Code_2a.py : Model with continuum elements
+  * Supplementary_Code_2b.py : Model with shell elements
+  * Supplementary_Code_2c.py : Model with beam elements 
 3. Dynamic Models for iOS
-  a. Supplementary_Code_3a.py : Model with continuum elements
-  b. Supplementary_Code_3b.py : Model with shell elements
-  c. Supplementary_Code_3c.py : Model with beam elements 
+  * Supplementary_Code_3a.py : Model with continuum elements
+  * Supplementary_Code_3b.py : Model with shell elements
+  * Supplementary_Code_3c.py : Model with beam elements 
 
 ## License
 This work is licensed under a
