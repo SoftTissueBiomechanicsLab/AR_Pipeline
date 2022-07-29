@@ -1,9 +1,14 @@
 # Texas TriValve
 <center><img src="/Images/Figure_Summary.png" width="90%" ></center>
 
-## Requirements
-* To run Texas TriValve 1.0 models you will need Abaqus with a linked FORTRAN compiler.
-* To view the augmented reality models you will need a smartphone compatible with [model-viewer](https://modelviewer.dev/). Click [here](https://softtissuebiomechanicslab.github.io/EngWithCompModels.html) or scan the QR code below to begin. 
+## Software Requirements
+* To create augmented reality (AR) models you will require the following software:
+  * ParaView 5.10
+  * Blender 2.83
+  * USDZExport addon for Blender 
+  * Apple Reality Converter (for MacOS users)
+  * Apple usdzconvert utility (for Windows/Unix users)
+* To view the augmented reality models you will need a smartphone compatible with [model-viewer](https://modelviewer.dev/). 
 
 <center><img src="/Images/Paper_AR_Instructions.png" width="90%" ></center>
 
