@@ -1,4 +1,4 @@
-# Texas TriValve
+# Augemented Reality Visualization Pipeline
 <center><img src="/Images/Figure_Summary.png" width="90%" ></center>
 
 ## Requirements
