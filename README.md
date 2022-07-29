@@ -5,23 +5,29 @@
 * To create augmented reality (AR) models you will require the following software:
   * [ParaView 5.10](https://www.paraview.org/download/)
   * [Blender 2.83](https://download.blender.org/release/)
-  * [USDZExport addon for Blender]() 
-  * [MacOS users: Apple Reality Converter]()
-  * [Windows/Unix users: Apple usdzconvert utility]()
+  * [BlenderUSDZ addon](https://github.com/robmcrosby/BlenderUSDZ/tree/e8a002849b85df3daba339912f4cc91fb042fe6d) 
+  * [MacOS users: Apple Reality Converter](https://developer.apple.com/augmented-reality/tools/)
+  * [Windows/Unix users: Apple usdzconvert utility](https://github.com/tappi287/usdzconvert_windows)
 * To view the augmented reality models you will need a smartphone compatible with [model-viewer](https://modelviewer.dev/). 
 
 ## File Description
+We provide .ply files 
 
 ## Code Description
-We provide Abaqus input files used to run simulations of the healthy, diseased, and repaired tricuspid valve. For additional details on simulation settings and element choices please refer to the main text. This repository includes the following input files: 
+* Static Models
+  * Supplementary_Code_1a.py :
+  * Supplementary_Code_1b.py :
+  * Supplementary_Code_1c.py :
+* Dynamic Models for Android
+  * Supplementary_Code_2a.py :
+  * Supplementary_Code_2b.py :
+  * Supplementary_Code_2c.py :
+* Dynamic Models for iOS
+  * Supplementary_Code_3a.py :
+  * Supplementary_Code_3b.py :
+  * Supplementary_Code_3c.py : 
 
-
-
-Additionally, we provide a user defined material model (Leaflet_Material.f) that must be used to successfully run the input files listed above. We recommend all models be run using double precision in Abaqus/Explicit
-
-
-
-
+## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
