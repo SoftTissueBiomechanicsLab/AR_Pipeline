@@ -1,4 +1,4 @@
-# 13 May 2022 - Mrudang Mathur
+# 29 July 2022 - Mrudang Mathur
 # Soft Tissue Biomechanics Lab - UT Austin 
 
 import bpy
