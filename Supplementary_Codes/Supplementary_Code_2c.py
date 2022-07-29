@@ -16,7 +16,7 @@ pathName = "PrecedingDirectoryHere/AR_Pipeline/PLY_Files/Beam/"
 
 fileName = "Beam"
 startFrame = 0
-endFrame = 20
+endFrame = 10
 numRange = range(startFrame,endFrame+1)
 isoScale = 0.1
 

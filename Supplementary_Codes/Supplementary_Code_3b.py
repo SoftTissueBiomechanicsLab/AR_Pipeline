@@ -81,6 +81,7 @@ for obj in bpy.data.collections['Collection'].all_objects:
 
 #bpy.ops.object.select_all(action='TOGGLE')
 
+# DELETE EXTRA FRAMES
 for i in range(endFrame,startFrame,-1):
     bpy.data.objects[fileName+"_"+str(i)].select_set(True)
     bpy.ops.object.delete()
