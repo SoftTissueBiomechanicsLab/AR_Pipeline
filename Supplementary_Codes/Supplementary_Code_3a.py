@@ -21,9 +21,11 @@ numRange = range(endFrame,startFrame-1,-1)
 isoScale = 1
 
 key_index = 1
+key_index = 1
 init_frame = 1
-counter = init_frame
 step  = 2
+nloops = 3 
+counter = init_frame 
 
 for i in numRange:
     
@@ -60,21 +62,23 @@ for obj in bpy.data.collections['Collection'].all_objects:
 
 bpy.ops.object.join_shapes()
 
-for i in range(startFrame+1,endFrame+1):
+for j in range(0,nloops):
 
-    tempName = fileName+"_"+str(i)
-    bpy.context.object.active_shape_key_index = key_index
-    bpy.data.shape_keys["Key"].key_blocks[tempName].value = 0
-    bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter)
-    bpy.data.shape_keys["Key"].key_blocks[tempName].value = 1
-    bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter+step)
-    bpy.data.shape_keys["Key"].key_blocks[tempName].value = 0
-    bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter+2*step)
+    for i in range(startFrame+1,endFrame+1):
 
-    counter = counter+step
-    key_index = key_index+1
+        tempName = fileName+"_"+str(i)
+        bpy.context.object.active_shape_key_index = key_index
+        bpy.data.shape_keys["Key"].key_blocks[tempName].value = 0
+        bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter)
+        bpy.data.shape_keys["Key"].key_blocks[tempName].value = 1
+        bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter+step)
+        bpy.data.shape_keys["Key"].key_blocks[tempName].value = 0
+        bpy.data.shape_keys["Key"].key_blocks[tempName].keyframe_insert("value",frame=counter+2*step)
 
-bpy.context.scene.frame_end = init_frame + (endFrame-startFrame+1)*step
+        counter = counter+step
+        key_index = key_index+1
+
+bpy.context.scene.frame_end = init_frame + (endFrame-startFrame)*step*nloops+step
 
 for obj in bpy.data.collections['Collection'].all_objects:
     obj.select_set(False)
