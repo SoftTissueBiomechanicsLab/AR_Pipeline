@@ -10,23 +10,14 @@
   * Apple usdzconvert utility (for Windows/Unix users)
 * To view the augmented reality models you will need a smartphone compatible with [model-viewer](https://modelviewer.dev/). 
 
-<center><img src="/Images/Paper_AR_Instructions.png" width="90%" ></center>
-
 ## Code Description
 We provide Abaqus input files used to run simulations of the healthy, diseased, and repaired tricuspid valve. For additional details on simulation settings and element choices please refer to the main text. This repository includes the following input files: 
 
-* Healthy_QuasiStatic.inp
-  * Healthy tricuspid valve modeled from end-diastole to end-systole.
-* Healthy_Dynamic.inp
-  * Healthy tricuspid valve model running over one cardiac cycle i.e from end-diastole to end-diastole.
-* Diseased_QuasiStatic.inp
-  * Regurgitant tricuspid valve model loaded to pathological pressures at end-systole.
-* Annuloplasty_QuasiStatic.inp
-  * Regurgitant tricuspid valve model repaired via annuloplasty, loaded to pathological pressures at end-systole.
-* Clipping_QuasiStatic.inp
-  * Regurgitant tricuspid valve model repaired via clip-based repair, loaded to pathological pressures at end-systole.
+
 
 Additionally, we provide a user defined material model (Leaflet_Material.f) that must be used to successfully run the input files listed above. We recommend all models be run using double precision in Abaqus/Explicit
+
+## File Description
 
 
 This work is licensed under a
