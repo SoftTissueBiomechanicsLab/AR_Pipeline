@@ -24,7 +24,7 @@ key_index = 1
 key_index = 1
 init_frame = 1
 step  = 2
-nloops = 3 
+nloops = 8 
 counter = init_frame 
 
 for i in numRange:
@@ -100,4 +100,4 @@ bpy.data.collections['Collection'].objects[fileName+"_"+str(startFrame)].select_
 #light_object.location = (0, 0, 0.5)
 #bpy.data.collections['Collection'].objects['LIGHT'].select_set(True)
 
-bpy.ops.wm.usd_export(filepath=pathName+fileName+"_Dynamic.usda", export_animation= True, selected_objects_only = True)
+bpy.ops.wm.usd_export(filepath=pathName+fileName+"_Dynamic.usdc", export_animation= True, selected_objects_only = True)
