@@ -11,7 +11,7 @@
 * To host and render the AR models you will need to include  the [model-viewer](https://modelviewer.dev/) API within your webpage. 
 
 ## File Description
-We provide '.ply' files of results from fintie element simulations discretized with i) continuum, ii) shell, and iii) beam finite elements. These files are located within similarly named subfolders under the "PLY_Files/" directory. Moreover, we provide '.glb' and '.usdz' files of the AR models corresponding to these results. 
+We provide '.ply' files of results from finite element simulations discretized with i) continuum, ii) shell, and iii) beam finite elements. Please note, the above mentioned finite element discretizations may be substituted with other types of scientific data represented by volumes, surfaces, and curves in 3D space, respectively. The '.ply' files are located within similarly named subfolders under the "PLY_Files/" directory. Moreover, we provide '.glb' and '.usdz' files of the AR models corresponding to these results. 
 
 ## Code Description
 We provide example python scripts to automatically create AR models from continuum, shell, and beam finite elements. These scripts may be run from the 'Scipting' window within Blender or from the command line. To execute these scripts, users will need the '.ply' files provided for each example. The pythons scrips are as follows: 
