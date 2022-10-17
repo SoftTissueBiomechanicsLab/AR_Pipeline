@@ -34,7 +34,7 @@ bpy.context.object.location[2] = 0.25
 bpy.ops.object.shade_smooth()
 
 # ADD COLOUR MAP 
-temp_matName = "Material_"+str(i)
+temp_matName = "Material_0"
 new_mat = bpy.data.materials.new(name=temp_matName)
 bpy.context.object.data.materials.append(new_mat)
 new_mat.use_nodes = True
