@@ -32,7 +32,7 @@ bpy.context.object.location[1] = -0.05
 bpy.context.object.location[2] = 0.
 
 # ADD COLOUR MAP 
-temp_matName = "Material_"+str(i)
+temp_matName = "Material_0"
 new_mat = bpy.data.materials.new(name=temp_matName)
 bpy.context.object.data.materials.append(new_mat)
 new_mat.use_nodes = True
