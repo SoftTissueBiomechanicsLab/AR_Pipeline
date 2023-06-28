@@ -29,6 +29,23 @@ We provide example python scripts to automatically create AR models from continu
   * Supplementary_Script_3b.py : Model with shell elements
   * Supplementary_Script_3c.py : Model with beam elements 
 
+## References
+If you find this repository useful for your research, please cite the following work:
+```
+@article{Mathur2023AR,
+author = {Mathur, Mrudang and Brozovich, Josef M. and Rausch, Manuel K.},
+doi = {10.1016/j.finel.2022.103851},
+issn = {0168874X},
+journal = {Finite Elements in Analysis and Design},
+number = {September 2022},
+publisher = {Elsevier B.V.},
+title = {{A brief note on building augmented reality models for scientific visualization}},
+volume = {213},
+year = {2023}
+}
+
+```
+
 ## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
