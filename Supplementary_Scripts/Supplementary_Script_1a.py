@@ -58,4 +58,4 @@ bpy.context.object.modifiers["Decimate"].ratio = 0.25
 #bpy.data.collections['Collection'].objects['LIGHT'].select_set(True)
 
 # EXPORT FILE
-bpy.ops.export_scene.gltf(filepath = pathName+"/"+fileName+"_Dynamic.glb",export_nla_strips=False)
+bpy.ops.export_scene.gltf(filepath = pathName+"/"+fileName+"_Static.glb",export_nla_strips=False)
