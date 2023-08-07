@@ -8,20 +8,23 @@ from math import *
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete(use_global=False)
     
+# CLEAR WORKSPACE OF UNWANTED OBJECTS
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 
 pathName = "PrecedingDirectoryHere/AR_Pipeline/Workshop_Materials/Walkthrough_1/PLY"
 
+# LOAD ALL PLY FILES 
 fileName = "Valve"
-startFrame = 0
-endFrame = 20
+startFrame = 0 # File no. of first object in timeseries
+endFrame = 20 # File no. of last object in timeseries
 numRange = range(startFrame,endFrame+1)
-isoScale = 0.1
 
-init_frame = 1
-animStep = 2
+isoScale = 0.1 # Isotropic scaling factor for object size
+
+init_frame = 1 # Frame no. of first frame in animation
+animStep = 2 # No. of empty frames between two meshes in animation; like "frame-rate"
 count = 1
 
 for i in numRange:

@@ -8,6 +8,7 @@ from math import *
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete(use_global=False)
     
+# CLEAR WORKSPACE OF UNWANTED OBJECTS
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
@@ -15,7 +16,7 @@ bpy.ops.outliner.orphans_purge()
 pathName = "PrecedingDirectoryHere/AR_Pipeline/Workshop_Materials/Walkthrough_1/PLY"
 
 fileName = "Valve"
-Frame = 14
+Frame = 14 # File no. of object in timeseries
 
 # IMPORT OBJECTS 
 tempfileName = pathName+fileName+"_"+str(Frame)+".ply"
@@ -56,4 +57,4 @@ bpy.context.object.modifiers["Decimate"].ratio = 0.25
 #bpy.data.collections['Collection'].objects['LIGHT'].select_set(True)
 
 # EXPORT FILE
-#bpy.ops.export_scene.gltf(filepath = pathName+"/"+fileName+"_Static.glb",export_nla_strips=False)
+bpy.ops.export_scene.gltf(filepath = pathName+"/"+fileName+"_Static.glb")

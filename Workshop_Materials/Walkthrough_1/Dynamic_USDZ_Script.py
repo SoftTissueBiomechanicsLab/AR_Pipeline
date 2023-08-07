@@ -7,23 +7,27 @@ from math import *
 
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete(use_global=False)
-    
+
+# CLEAR WORKSPACE OF UNWANTED OBJECTS    
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 
 pathName = "PrecedingDirectoryHere/AR_Pipeline/Workshop_Materials/Walkthrough_1/PLY"
 
+# LOAD ALL PLY FILES 
 fileName = "Valve_USDZ"
-startFrame = 1
-endFrame = 20
+startFrame = 1 # File no. of first object in timeseries
+endFrame = 20 # File no. of last object in timeseries
 numRange = range(endFrame,startFrame-1,-1)
-isoScale = 0.1
 
-key_index = 1
-init_frame = 1
-step  = 2
-nloops = 3 
+isoScale = 0.1 # Isotropic scaling factor for object size
+
+key_index = 1 # File no. of first object in timeseries
+init_frame = 1 # Frame no. of first frame in animation
+step  = 2 # No. of empty frames between two meshes in animation; like "frame-rate"
+nloops = 2 # No. of loops in animation
+
 counter = init_frame 
 
 for i in numRange:
@@ -34,9 +38,9 @@ for i in numRange:
     bpy.ops.import_mesh.ply(filepath=tempfileName)
     
     # TRANSFORM OBJECTS
-    bpy.context.object.scale[0] = 0.1
-    bpy.context.object.scale[1] = 0.1
-    bpy.context.object.scale[2] = 0.1
+    bpy.context.object.scale[0] = isoScale
+    bpy.context.object.scale[1] = isoScale
+    bpy.context.object.scale[2] = isoScale
     bpy.context.object.location[0] = 0.
     bpy.context.object.location[1] = 0.
     bpy.context.object.location[2] = 2.25
