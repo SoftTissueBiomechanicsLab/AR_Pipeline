@@ -13,7 +13,7 @@ bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 bpy.ops.outliner.orphans_purge()
 
-pathName = "PrecedingDirectoryHere/AR_Pipeline/Workshop_Materials/Walkthrough_1/PLY"
+pathName = "PrecedingDirectoryHere/AR_Pipeline/Workshop_Materials/Walkthrough_1/PLY/"
 
 # LOAD ALL PLY FILES 
 fileName = "Valve_USDZ"
